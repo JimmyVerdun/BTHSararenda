@@ -410,7 +410,7 @@
             const sortedCareers = Object.entries(careerScores).sort((a, b) => b[1] - a[1]);
 
             // Mostrar las 2 carreras con mayor puntaje
-            let resultText ;
+            let resultText;
             resultText = `${sortedCareers[0][0]} con ${sortedCareers[0][1]} puntos.</p>`;
             document.getElementById("result1").innerHTML += resultText;
             resultText = `${sortedCareers[1][0]} con ${sortedCareers[1][1]} puntos.</p>`;
