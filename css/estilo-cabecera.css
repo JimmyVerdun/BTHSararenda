@@ -1,1 +1,287 @@
+:root {
+    --azul-marino: rgb(0, 50, 108);
+    --amarillo: #ffd60a;
+    --plomo-claro: #e6e6e6;
+    --plomo-medio: #bdbdbd;
+    --texto: #1f2933;
+    --blanco: #ffffff;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto);
+    background: linear-gradient(180deg, var(--amarillo) 0%, var(--plomo-claro) 100%);
+    padding-top: 80px;
+}
+
+/* === CABECERA === */
+.barra-navegacion {
+    background: var(--azul-marino);
+    color: var(--blanco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1300;
+    box-shadow: 0 6px 18px rgba(10, 35, 64, 0.25);
+}
+
+.contenedor-barra {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.marca img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
+    animation: pulsoLogo 3s infinite ease-in-out;
+}
+
+@keyframes pulsoLogo {
+
+    0%,
+    100% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.marca .titulo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* === ESTILOS DEL MENÚ === */
+nav {
+    color: var(--blanco);
+    top: 0;
+    left: 0;
+    width: 75%;
+}
+
+/* Ocultar el menú de navegación principal por defecto en móviles */
+nav>ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+nav>ul>li {
+    position: relative;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: rgba(94, 136, 236, 0.8);
+}
+
+nav a {
+    display: block;
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s;
+    background-color: rgba(6, 42, 99, 0.7);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(217, 234, 36, 0.9);
+    color: var(--texto);
+}
+
+/* Submenús */
+nav ul ul {
+    position: absolute;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    background-color: rgba(94, 136, 236, 0.8);
+    border-radius: 0 0 12px 12px;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(179, 108, 38, 0.5);
+}
+
+/* Hacer que cada ítem de la 2da lista sea relativo */
+nav ul ul li {
+    position: relative;
+    border-bottom: 1px solid #555;
+}
+
+nav ul ul li:last-child {
+    border-bottom: none;
+}
+
+/* Posicionar el 3er nivel (sub-submenú)  */
+nav ul ul ul {
+    top: 0;
+    border-radius: 0 12px 12px 0;
+    left: 100%;
+    /* Relativo al LI padre) */
+}
+
+nav li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* === Hamburguesa y Responsivo === */
+
+/* Ocultar el checkbox que controla la visibilidad del menú */
+#menu-toggle {
+    display: none;
+}
+
+/* Estilos del icono hamburguesa (el label) */
+.menu-icon {
+    display: none;
+    /* Ocultar por defecto en desktop */
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 1001;
+    /* Asegurar que esté por encima del menú colapsado */
+}
+
+/* Creación de las 3 barras de la hamburguesa */
+.menu-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    background: white;
+    border-radius: 2px;
+    opacity: 1;
+    left: 10%;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu-icon span:nth-child(1) {
+    top: 10px;
+}
+
+.menu-icon span:nth-child(2) {
+    top: 23px;
+}
+
+.menu-icon span:nth-child(3) {
+    top: 36px;
+}
+
+/* Ocultar la lista principal cuando el menú hamburguesa esté visible en móviles */
+@media (max-width: 930px) {
+
+    /* Mostrar el icono hamburguesa en móviles */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Ocultar el menú principal por defecto en móviles */
+    nav>ul {
+        display: none;
+        flex-direction: column;
+        gap: 1px;
+        /* Ocupar todo el ancho */
+        width: 100%;
+        position: absolute;
+        top: 85px;
+        /* Debajo de la barra de navegación */
+        left: 0;
+        background-color: rgba(0, 30, 65, 0.7);
+        /* Color de fondo para que se extienda */
+        box-shadow: 0 4px 8px rgba(164, 170, 0, 0.7);
+    }
+
+    nav a {
+        padding: 10px 10px;
+        background: rgba(0, 50, 108, 0.7);
+    }
+
+    /* Mostrar el menú principal al hacer clic en el checkbox */
+    #menu-toggle:checked~ul {
+        display: flex;
+    }
+
+    /* Los submenús ya no son desplegables al pasar el ratón, sino al hacer clic/tocar */
+    nav ul ul {
+        position: static;
+        display: none;
+        margin-left: 10px;
+        opacity: 1;
+        /* Necesario para que el display: block funcione sin transición de opacidad */
+        visibility: visible;
+        transform: none;
+        background-color: rgba(0, 0, 116, 0.5);
+        min-width: auto;
+        box-shadow: none;
+    }
+
+    /* HACER QUE EL LI EN MÓVILES SEA ESTÁTICO DE NUEVO */
+    nav ul ul li {
+        position: static;
+        border-radius: 5px;
+        /* **<-- REVERTIR A ESTÁTICO EN MÓVILES** */
+    }
+
+    nav ul ul ul {
+        margin-left: 20px;
+        background: rgba(0, 50, 108, 0.5);
+    }
+
+    /* En móviles, los submenús se muestran al hacer hover (o al tocar) */
+    nav li:hover>ul,
+    nav li:focus-within>ul {
+        display: block;
+    }
+
+    /* Animación de la X al estar marcado el checkbox */
+    #menu-toggle:checked+.menu-icon span:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+    }
+
+    #menu-toggle:checked+.menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked+.menu-icon span:nth-child(3) {
+        transform: translateY(-13px) rotate(-45deg);
+    }
+}
