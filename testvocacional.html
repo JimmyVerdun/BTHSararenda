@@ -1,1 +1,414 @@
-
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vocacional - BTH Sararenda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(BTH-ModuloTecnologicoSararenda02.jpg);
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+        .result {
+            color: #333;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Vocacional para el Ingreso al Módulo Tecnológico Productivo BTH "Sararenda"</h1>
+    <form id="testForm">
+        <!-- Sección 1: Textiles y Confecciones -->
+        <div class="section" id="section1">
+            <h3>Sección 1: Creatividad y Diseño</h3>
+            <div class="question">
+                <label>1. Me gusta trabajar con mis manos y disfruto crear proyectos como diseños, manualidades o artesanías.</label>
+                <select name="q1">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>2. Me gusta investigar sobre modas o diseños de otros países y culturas.</label>
+                <select name="q2">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>3. Me siento cómodo calculando medidas y haciendo patrones para que todo quede exacto.</label>
+                <select name="q3">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>4. Me gusta la idea de expresar mi creatividad a través de los materiales que elijo y los objetos que creo.</label>
+                <select name="q4">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>5. Prefiero trabajos en los que puedo ver el resultado final de mis ideas y esfuerzos.</label>
+                <select name="q5">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+        </div>
+        <!-- Sección 2: Carpintería Metal y Madera -->
+        <div class="section" id="section2">
+            <h3>Sección 2: Construcción y Ensamblaje</h3>
+            <div class="question">
+                <label>6. Me gusta crear cosas útiles y bellas con madera o metal y siento que puedo ser muy creativo en ello.</label>
+                <select name="q6">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>7. Disfruto hacer cálculos y mediciones exactas para que todo encaje a la perfección.</label>
+                <select name="q7">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>8. Me interesa aprender sobre la resistencia de los materiales y cómo hacer que las estructuras sean seguras y duraderas.</label>
+                <select name="q8">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>9. Me atrae la idea de trabajar con herramientas y construir cosas que tengan un propósito práctico.</label>
+                <select name="q9">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>10. Me gusta el trabajo que requiere paciencia y precisión, y no me molesta ensuciarme o esforzarme físicamente.</label>
+                <select name="q10">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+        </div>
+        <!-- Sección 3: Electricidad Industrial -->
+        <div class="section" id="section3">
+            <h3>Sección 3: Sistemas y Mantenimiento</h3>
+            <div class="question">
+                <label>11. Me interesa saber cómo funciona la electricidad y cómo se distribuye en edificios y maquinarias.</label>
+                <select name="q11">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>12. Me siento cómodo con fórmulas y cálculos que me ayudan a medir voltajes, corrientes y resistencias.</label>
+                <select name="q12">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>13. Me gustaría entender cómo funcionan los conductores y los diferentes materiales en un sistema eléctrico.</label>
+                <select name="q13">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>14. Me gusta la idea de resolver problemas técnicos y prácticos en la industria, y me siento atraído por los trabajos de instalación y mantenimiento.</label>
+                <select name="q14">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>15. Me interesan los trabajos en los que puedo aportar a la seguridad y al correcto funcionamiento de equipos y edificios.</label>
+                <select name="q15">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+        </div>
+        <!-- Sección 4: Electrónica -->
+        <div class="section" id="section4">
+            <h3>Sección 4: Tecnología y Electrónica</h3>
+            <div class="question">
+                <label>16. Me gusta entender cómo funcionan los circuitos y el flujo de electricidad en dispositivos.</label>
+                <select name="q16">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>17. Me siento bien usando números y fórmulas para resolver problemas detallados y precisos.</label>
+                <select name="q17">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>18. Me interesa aprender sobre tecnología y electrónica de otros países y leer sobre proyectos innovadores en este campo.</label>
+                <select name="q18">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>19. Disfruto armando y desarmando aparatos para ver cómo funcionan por dentro.</label>
+                <select name="q19">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>20. Me gusta experimentar con componentes electrónicos y pensar en cómo puedo crear o mejorar un dispositivo electrónico.</label>
+                <select name="q20">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+        </div>
+        <!-- Sección 5: Mecánica Automotriz -->
+        <div class="section" id="section5">
+            <h3>Sección 5: Máquinas y Vehículos</h3>
+            <div class="question">
+                <label>21. Me interesa aprender sobre el funcionamiento de los motores y cómo las fuerzas y el movimiento afectan a los vehículos.</label>
+                <select name="q21">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>22. Me atrae conocer sobre combustibles y cómo funcionan dentro de un motor..</label>
+                <select name="q22">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>23. Me siento bien haciendo cálculos de velocidad, distancia y fuerza, especialmente en relación con vehículos.</label>
+                <select name="q23">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>24. Me gusta entender cómo funcionan las cosas y me siento satisfecho al reparar o mejorar máquinas.</label>
+                <select name="q24">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>25. Me siento cómodo trabajando con herramientas y me atrae la idea de un taller mecánico.</label>
+                <select name="q25">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+        </div>
+        <!-- Sección 6: Mecánica Industrial (Soldadura) -->
+        <div class="section" id="section6">
+            <h3>Sección 6: Construcción Industrial</h3>
+            <div class="question">
+                <label>26. Me interesa entender la resistencia de los metales y la estabilidad de las estructuras.</label>
+                <select name="q26">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>27. Me gusta saber cómo reaccionan los diferentes metales y los procesos necesarios para unirlos.</label>
+                <select name="q27">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>28. Me siento seguro midiendo y calculando cuando tengo que ensamblar piezas de metal.</label>
+                <select name="q28">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>29. Me interesa trabajar en proyectos grandes y me gusta pensar que lo que construyo será útil y duradero.</label>
+                <select name="q29">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>30. Me siento cómodo en un ambiente de taller y me atrae la idea de un trabajo que requiere precisión.</label>
+                <select name="q30">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+        </div>
+        <!-- Sección 7: Sistemas Informáticos -->
+        <div class="section" id="section7">
+            <h3>Sección 7: Computadoras y Programación</h3>
+            <div class="question">
+                <label>31. Me gusta la lógica y disfruto resolver problemas de manera ordenada y estructurada..</label>
+                <select name="q31">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>32. Me interesa leer e investigar sobre tecnología en otros idiomas, ya que sé que muchas herramientas tecnológicas están en inglés.</label>
+                <select name="q32">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>33. Me intriga saber cómo se fabrican y cómo funcionan los componentes físicos dentro de un computador.</label>
+                <select name="q33">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>34. Me gusta trabajar en la computadora y me siento atraído por la idea de programar o crear aplicaciones.</label>
+                <select name="q34">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>35. Disfruto resolver problemas usando tecnología y me gusta encontrar soluciones creativas.</label>
+                <select name="q35">
+                    <option value="4">Mucho</option>
+                    <option value="3">Algo</option>
+                    <option value="2">Poco</option>
+                    <option value="1">Nada</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <h2>RESULTADOS DEL TEST Vocacional</h2>
+            <p>Las dos carreras más adecuadas para ti son:</p>
+            <p class="result"><b>Opción 1: </b><span id= result1></p>
+            <p class="result"><b>Opción 2: </b><span id= result2></p>
+        </div>
+        <button type="button" onclick="calculateResults()">Calcular Resultados</button>
+    </form>
+    <script>
+        function calculateResults() {
+            const form = document.forms["testForm"];
+            const careerScores = {
+                "Textiles y Confecciones": 0,
+                "Carpintería en Metal y Madera": 0,
+                "Electricidad Industrial": 0,
+                "Electrónica": 0,
+                "Mecánica Automotriz": 0,
+                "Mecánica Industrial (Soldadura)": 0,
+                "Sistemas Informáticos": 0
+            };
+            // Calcular los puntos para cada carrera
+            careerScores["Textiles y Confecciones"] += parseInt(form.q1.value) + parseInt(form.q2.value) + parseInt(form.q3.value) + parseInt(form.q4.value) + parseInt(form.q5.value);
+            careerScores["Carpintería en Metal y Madera"] += parseInt(form.q6.value) + parseInt(form.q7.value) + parseInt(form.q8.value) + parseInt(form.q9.value) + parseInt(form.q10.value);
+            careerScores["Electricidad Industrial"] += parseInt(form.q11.value) + parseInt(form.q12.value) + parseInt(form.q13.value) + parseInt(form.q14.value) + parseInt(form.q15.value);
+            careerScores["Electrónica"] += parseInt(form.q16.value) + parseInt(form.q17.value) + parseInt(form.q18.value) + parseInt(form.q19.value) + parseInt(form.q20.value);
+            careerScores["Mecánica Automotriz"] += parseInt(form.q21.value) + parseInt(form.q22.value) + parseInt(form.q23.value) + parseInt(form.q24.value) + parseInt(form.q25.value);
+            careerScores["Mecánica Industrial (Soldadura)"] += parseInt(form.q26.value) + parseInt(form.q27.value) + parseInt(form.q28.value) + parseInt(form.q29.value) + parseInt(form.q30.value);
+            careerScores["Sistemas Informáticos"] += parseInt(form.q31.value) + parseInt(form.q32.value) + parseInt(form.q33.value) + parseInt(form.q34.value) + parseInt(form.q35.value);
+            // Ordenar las carreras por puntaje
+            const sortedCareers = Object.entries(careerScores).sort((a, b) => b[1] - a[1]);
+            // Mostrar las 2 carreras con mayor puntaje
+            document.getElementById("result1").innerHTML = `${sortedCareers[0][0]} con ${sortedCareers[0][1]} puntos.</span>`;
+	    document.getElementById("result2").innerHTML = `${sortedCareers[1][0]} con ${sortedCareers[1][1]} puntos.</span>`;
+        }
+    </script>
+</body>
+</html>
