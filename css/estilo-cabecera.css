@@ -83,8 +83,10 @@ body {
 /* === ESTILOS DEL MENÚ === */
 .barra-navegacion,
 nav,
-nav ul li,
-nav a {
+nav ul,
+nav li,
+nav a,
+.marca .titulo {
     font-family: var(--header-font) !important;
 }
 nav {
