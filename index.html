@@ -4,17 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTH Sararenda - Inicio</title>
-    <!-- Enlace a las Hojas de Estilos de Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>BTH "Sararenda" - Inicio</title>
     <link rel="stylesheet" href="css/estilo-cabecera.css">
+    <link rel="stylesheet" href="css/estilo-pie.css">
     <link rel="stylesheet" href="css/estilo-index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace a las Hojas de Estilos de Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
-    <!-- Contenedor de la Cabecera -->
-    <div id="header"></div>
+    <!-- Cabecera -->
+    <header class="barra-navegacion">
+        <div class="contenedor-barra">
+            <a href="index.html" class="marca">
+                <img src="img/LOGO BTH.png" alt="Logo BTH">
+                <div class="titulo">B.T.H. "Sararenda"</div>
+            </a>
+            <nav>
+                <!-- Menú hamburguesa -->
+                <input type="checkbox" id="menu-toggle">
+
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- Menú -->
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+
+                    <li><a href="#">Carreras</a>
+                    <ul>
+                        <li><a href="#">Carpintería en Madera y Metal</a>
+                            <ul>
+                                <li><a href="paginas/carpinteria-info.html">Información</a></li>
+                                <li><a href="paginas/carpinteria-clases.html">Clases Pedagógicas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Electricidad Industrial</a>
+                            <ul>
+                                <li><a href="paginas/electricidad-info.html">Información</a></li>
+                                <li><a href="paginas/electricidad-clases.html">Clases Pedagógicas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Electrónica</a>
+                            <ul>
+                                <li><a href="paginas/electronica-info.html">Información</a></li>
+                                <li><a href="paginas/electronica-clases.html">Clases Pedagógicas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mecánica Automotriz</a>
+                            <ul>
+                                <li><a href="paginas/mecanica-info.html">Información</a></li>
+                                <li><a href="paginas/mecanica-clases.html">Clases Pedagógicas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mecánica Industrial</a>
+                            <ul>
+                                <li><a href="paginas/mecindustrial-info.html">Información</a></li>
+                                <li><a href="paginas/mecindustrial-clases.html">Clases Pedagógicas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sistemas Informáticos</a>
+                            <ul>
+                                <li><a href="paginas/informatica-info.html">Información</a></li>
+                                <li><a href="paginas/informatica-clases.html">Clases Pedagógicas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Textiles y Confecciones</a>
+                            <ul>
+                                <li><a href="paginas/textiles-info.html">Información</a></li>
+                                <li><a href="paginas/textiles-clases.html">Clases Pedagógicas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                    <li><a href="#">Plantel</a>
+                        <ul>
+                            <li><a href="paginas/plantel-adminstrativo.html">Administrativos</a></li>
+                            <li><a href="paginas/plantel-docente.html">Docentes</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Galería</a>
+                        <ul>
+                            <li><a href="paginas/galeria-carpinteria.html">Carpintería en Madera y Metal</a></li>
+                            <li><a href="paginas/galeria-electricidad.html">Electricidad Industrial</a></li>
+                            <li><a href="paginas/galeria-electronica.html">Electrónica</a></li>
+                            <li><a href="paginas/galeria-mecanica.html">Mecánica Automotriz</a></li>
+                            <li><a href="paginas/galeria-mecindustrial.html">Mecánica Industrial</a></li>
+                            <li><a href="paginas/galeria-sistemas.html">Sistemas Informáticos</a></li>
+                            <li><a href="paginas/galeria-textiles.html">Textiles y Confecciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="paginas/acerca.html">Sobre Nosotros</a></li>
+                    <li><a href="paginas/contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!-- Contenedor del Carrusel -->
     <div class="swiper-container">
         <h2>NUESTRAS CARRERAS</h2>
@@ -62,22 +152,23 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    <div class="contenedor-flotantes">
-        <a class="flujo-link flujo-test" href="testvocacional.html" target="_blank"
-            aria-label="Test" title="Realiza tu Test Vocacional aquí">
-            <i class="fa-solid fa-chalkboard-user"></i>
-        </a>
-        <a class="flujo-link flujo-whatsapp" href="https://api.whatsapp.com/send?phone=59172605184" target="_blank"
-            aria-label="WhatsApp" title="Escribenos por WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a class="flujo-link flujo-facebook"
-            href="https://www.facebook.com/p/Módulo-Tecnológico-Productivo-BTH-Sararenda-100065083578512/"
-            target="_blank" aria-label="Facebook" title="Visita nuestra cuenta de Facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-    </div>
+    <!-- Pie de Página -->
     <footer class="pie-pagina">
+        <div class="contenedor-flotantes">
+            <a class="flujo-link flujo-test" href="paginas/TestVocacional-BTHSararenda.html" aria-label="Test"
+                title="Realiza tu Test Vocacional aquí">
+                <i class="fa-solid fa-chalkboard-user"></i>
+            </a>
+            <a class="flujo-link flujo-whatsapp" href="https://api.whatsapp.com/send?phone=59172605184" target="_blank"
+                aria-label="WhatsApp" title="Escribenos por WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a class="flujo-link flujo-facebook"
+                href="https://www.facebook.com/p/Módulo-Tecnológico-Productivo-BTH-Sararenda-100065083578512/"
+                target="_blank" aria-label="Facebook" title="Visita nuestra cuenta de Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
         <div class="contenedor-footer">
             <div class="info-contacto">
                 <span><i class="fas fa-map-marker-alt"></i> Final Av. Petrolera Este, Ex. YPFB</span>
@@ -89,52 +180,8 @@
     </footer>
     <!-- Añadir los Scripts de Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Sript par cargar la cabecera -->
-    <script src="js/script-cabecera.js"></script>
     <!-- Configurando el script de Swiper -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const swiper = new Swiper('.mySwiper', {
-                // Efecto de deslizamiento
-                effect: 'coverflow',
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: 'auto',
-                loop: true, // Permite que el carrusel se deslice en forma circular, indefinidamente, no muestra espacios entre la primer y ultima imagen
-                coverflowEffect: {
-                    rotate: 20,
-                    stretch: 0,
-                    depth: 200,
-                    modifier: 1,
-                    slideShadows: true,
-                },
-                // Paginación
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                // Navegación con flechas
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                // Carrusel autodeslizante, al llegar al final se repite la secuencia, muestra un espacio al iniciar la secuencia
-                autoplay: {
-                    delay: 3000, // Duración por imagen de 3 segundos
-                    disableOnInteraction: false,
-                },
-                // Responsive
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                    },
-                }
-            });
-        });
-    </script>
+    <script src="js/script-carrusel.js"></script>
 </body>
 
 </html>
