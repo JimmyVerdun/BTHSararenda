@@ -3,10 +3,14 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    margin-right: 30px;
 }
 
 .about-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;           /* móvil: una columna */
+    gap: 2rem;
+    margin-left: 10px;
     align-items: center;
 }
 
@@ -36,6 +40,9 @@ h1 {
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    justify-self: center;                 /* centra la imagen en móvil */
+    width: 100%;
+    overflow: hidden;
 }
 
 .about-image:hover {
@@ -48,4 +55,10 @@ h1 {
 .about-image img {
     width: 100%;
     height: auto;
+}
+
+@media (min-width: 801px) {
+    .about-section {
+        grid-template-columns: 2fr 1fr;    /* dos columnas iguales */
+    }
 }
